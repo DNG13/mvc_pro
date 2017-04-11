@@ -1,4 +1,7 @@
 /.idea
 /logs
 /lib/config.php
-/assets/bootstrap3
+/vendor
+composer.lock
+/application/config/db.php
+public/assets/bootstrap3/
