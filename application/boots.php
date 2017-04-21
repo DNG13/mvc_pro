@@ -1,4 +1,7 @@
 <?php
+//for flash message
+require_once 'core/session/session.php';
+require_once 'core/session/flash.php';
 
 //connect to errors
 require_once 'errors/not_found_exception.php';

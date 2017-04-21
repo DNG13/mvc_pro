@@ -24,6 +24,9 @@ class Route
             if (file_exists($model_path)) {
                 require_once $model_path;
             }
+            $flash = new Flash();
+            $flash->setMessage('we', 'we are great');
+            echo $flash->getMessage('we');
 
             // includes and evaluates controller
             $controller_file = strtolower($controller_name) . '.php';

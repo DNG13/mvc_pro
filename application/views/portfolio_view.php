@@ -4,7 +4,8 @@
     Все проекты в следующей таблице являются вымышленными,
     поэтому даже не пытайтесь перейти по приведенным ссылкам.
     <thead>
-        <tr><td>Рік</td>
+        <tr>
+            <td>Рік</td>
             <td>Проект</td>
             <td>Опис</td>
         </tr>
@@ -13,10 +14,11 @@
     <?php
     foreach($data as $row)
     {
-        echo '<tr><td>'.$row->getYear() .
-            '</td><td>'.$row->getSite() .
-            '</td><td>'.$row->getDescription() .
-            '</td></tr>';
+        echo '<tr>
+                <td>'.$row->getYear() . '</td>
+                <td>'.$row->getSite() . '</td>
+                <td>'.$row->getDescription() . '</td>
+              </tr>';
     }
     ?>
     </tbody>
